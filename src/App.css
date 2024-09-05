@@ -31,7 +31,7 @@ nav.navbar {
 }
 
 .bg-yellow {
-  background-color: #ffec62 !important;
+  background-color: #01a2ff !important;
 }
 
 article > p {
@@ -45,7 +45,7 @@ article > p {
 
 #login-card {
   width: 27rem;
-  background-color: #ffec62;
+  background-color: #cbe1f1;
 }
 
 #error {
