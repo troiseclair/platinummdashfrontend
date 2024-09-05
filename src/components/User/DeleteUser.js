@@ -12,7 +12,7 @@ export default function DeleteUser() {
 
   const deleteData = async (id) => {
     try {
-      await axios.delete(`http://52.221.24.81:3108/User/delete/${id}`);
+      await axios.delete(`http://localhost:3108/user/delete/${id}`);
       navigate("/User");
     } catch (error) {
       console.log(error);

@@ -31,7 +31,7 @@ export default function UpdateUser(props) {
   const getUserById = async () => {
     try {
       const User = await axios.get(
-        `http://52.221.24.81:3108/User/${id}`,
+        `http://localhost:3108/user/${id}`,
         {
           headers: {
             Authorization: props.user.accessToken,

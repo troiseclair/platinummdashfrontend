@@ -13,7 +13,7 @@ export default function TableUser({ userLogin, mode, day }) {
     // console.log("user.accessToken", userLogin.user.accessToken);
     try {
       await axios
-        .get("http://52.221.24.81:3108/User", {
+        .get("http://localhost:3108/user", {
           headers: {
             Authorization: userLogin.user.accessToken,
           },
