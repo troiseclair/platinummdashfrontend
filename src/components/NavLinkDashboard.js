@@ -24,7 +24,7 @@ export default function NavLinkDashboard() {
           </li>
           <li className="nav-item me-3">
             <Link to={"/user"} className="nav-link">
-              User
+              Pegawai
             </Link>
           </li>
           <li className="nav-item me-3">

@@ -19,7 +19,7 @@ export default function User(props) {
             Add New
           </Link>
           {/* Table Data */}
-          <TableUser mode={mode} day={day} userLogin={props} />
+          <TableUser mode={mode} day={day} UserLogin={props} />
         </main>
       </div>
     </>

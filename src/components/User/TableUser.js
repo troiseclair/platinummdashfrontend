@@ -38,7 +38,7 @@ export default function TableUser({ userLogin, mode, day }) {
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Photo</th>
-            <th scope="col">Nama</th>
+            <th scope="col">Nama Pegawai</th>
             <th scope="col">Tanggal_Lahir</th>
             <th scope="col" data-testid="th-gender">
               Gender

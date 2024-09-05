@@ -33,7 +33,7 @@ export default function AddUser() {
   const addUser = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://52.221.24.81:3108/User", {
+      await axios.post("http://localhost:3108/user", {
         name,
         gender,
         birthDate,
@@ -43,7 +43,7 @@ export default function AddUser() {
         position,
         image,
       });
-      navigate("/User");
+      navigate("/user");
     } catch (error) {
       console.log(error);
     }
@@ -75,7 +75,7 @@ export default function AddUser() {
                 color: mode.color,
               }}
             >
-              <h5 className="card-title">Add New User</h5>
+              <h5 className="card-title">Tambah Pegawai</h5>
               <form
                 onSubmit={addUser}
                 className="row g-3 needs-validation"
@@ -95,7 +95,7 @@ export default function AddUser() {
                 {/* from fullname */}
                 <div className="col-md-12">
                   <label htmlFor="name" className="form-label">
-                    Nama Lengkap
+                    Nama Pegawai
                   </label>
                   <input
                     type="text"
@@ -225,10 +225,10 @@ export default function AddUser() {
                     required
                   >
                     <option value="-">Pilih Position</option>
-                    <option value="Admin">Admin</option>
-                    <option value="HRD">HRD</option>
-                    <option value="Kasir">Kasir</option>
-                    <option value="Store Crew">Store Crew</option>
+                    <option value="Direktur">Direktur</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Kepala Bagian">Kepala Bagian</option>
+                    <option value="Staf">Staf</option>
                   </select>
                 </div>
                 <div className="col-12">
@@ -240,7 +240,7 @@ export default function AddUser() {
                   >
                     Simpan
                   </button>
-                  <Link to={"/User"} className="btn btn-danger mt-2 ms-2">
+                  <Link to={"/user"} className="btn btn-danger mt-2 ms-2">
                     Batal
                   </Link>
                 </div>

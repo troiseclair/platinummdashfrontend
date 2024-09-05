@@ -6,6 +6,9 @@ import {
   Navigate,
 } from "react-router-dom";
 
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 import User from "./pages/User";
 import AddUser from "./components/User/AddUser";
 import DeleteUser from "./components/User/DeleteUser";
@@ -28,6 +31,18 @@ export default function RouterHelper() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Home />} 
+        />
+        <Route
+          path="/login"
+          element={user ? <Navigate to="/dashboard" replace /> : <Login />}
+        />
+        <Route
+          path="/dashboard"
+          element={
+            user ? <Dashboard user={user} /> : <Navigate to="/login" replace />
+          }
+        />
         <Route
           path="/User"
           element={
